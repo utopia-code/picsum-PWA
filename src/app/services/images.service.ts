@@ -11,7 +11,7 @@ export class ImagesService {
   constructor(private http: HttpClient) { }
 
   getAllImages(): Observable<Image[]> {
-    return this.http.get<Image[]>('http://picsum.photos/v2/list');
+    return this.http.get<Image[]>('https://picsum.photos/v2/list');
   }
 
   // error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'String'
